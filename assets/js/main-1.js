@@ -20,6 +20,17 @@
     });
 
 
+    // Enable dropdown parent link click navigation on desktop
+    $('.navbar .dropdown-toggle').on('click', function (e) {
+        if ($(window).width() > 991) {
+            var href = $(this).attr('href');
+            if (href && href !== '#') {
+                window.location.href = href;
+            }
+        }
+    });
+
+
     // data-background    
     $(document).on('ready', function () {
         $("[data-background]").each(function () {

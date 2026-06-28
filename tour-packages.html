@@ -15,7 +15,7 @@
 
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-1.png">
+    <link rel="icon" type="image/png" href="assets/img/logo/favicon-1.png">
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min-1.css">
@@ -124,9 +124,9 @@
                             </li>
                              <li class="nav-item"><a class='nav-link' href='outstation.html'>Outstation</a></li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tour Packages</a>
+                                <a class="nav-link dropdown-toggle" href="tour-packages.html" data-bs-toggle="dropdown">Tour Packages</a>
                                 <ul class="dropdown-menu fade-down">
-                                    <li><a class='dropdown-item' href='tour-packages.html'>Araku Tour Package</a></li>
+                                    <li><a class='dropdown-item' href='araku-tour.html'>Araku Tour Package</a></li>
                                     <li><a class='dropdown-item' href='tour-packages.html'>Vizag to Lambasingi</a></li>
                                     <li><a class='dropdown-item' href='tour-packages.html'>Custom Outstation Trips</a></li>
                                 </ul>
@@ -240,13 +240,23 @@ Tour Packages</li>
                     <h2 class="site-title">Our Best Travel Packages</h2>
                     <div class="heading-divider"></div>
                 </div>
-            </div>
+            </div>        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls mb-5 text-center">
+            <ul class="filter-btns justify-content-center" style="display: inline-flex !important;">
+                <li class="active" data-filter="*">All Packages</li>
+                <li data-filter=".cat-sightsee">Sightseeing</li>
+                <li data-filter=".cat-hill">Hill Stations</li>
+                <li data-filter=".cat-sacred">Temple Tours</li>
+                <li data-filter=".cat-custom">Custom/Group</li>
+            </ul>
         </div>
 
-        <div class="row">
+        <div class="row filter-box">
 
             <!-- Vizag Local -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 filter-item cat-sightsee">
                 <div class="blog-item wow fadeInUp" data-wow-delay=".25s">
                     <div class="blog-item-img">
                         <img src="assets/img/blog/vizag-tour.jpg" alt="Vizag Tour">
@@ -264,17 +274,17 @@ Tour Packages</li>
     Visakha Museum, Submarine Museum, Simhachalam Temple, and many more popular attractions. 
     Starting from ₹2,300 (Includes Cab, Tollgate, Parking, Hill Charges, and Driver Allowance).
 </p>
-                       
+                        
                         <a class="theme-btn" href="https://wa.me/919290762223"> WhatsApp Now<i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Araku -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 filter-item cat-sightsee cat-hill">
                 <div class="blog-item wow fadeInUp" data-wow-delay=".50s">
                     <div class="blog-item-img">
-                        <img src="assets/img/blog/araku-tour.jpg" alt="Araku Tour">
+                        <img src="assets/img/blog/araku-tour.png" alt="Araku Tour">
                     </div>
                     <div class="blog-item-info">
                         <div class="blog-item-meta">
@@ -288,13 +298,13 @@ Tour Packages</li>
     Includes Cab, Tollgate, Parking, Hill Charges, and Driver Allowance for a comfortable journey.  
     Starting from ₹4,000. Hotel charges extra.
 </p>
-                        <a class="theme-btn" href="https://wa.me/919290762223"> WhatsApp Now<i class="fas fa-arrow-right"></i></a>
+                        <a class="theme-btn" href="araku-tour.html">View Details & Rates<i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Lambasingi -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 filter-item cat-sightsee cat-hill">
                 <div class="blog-item wow fadeInUp" data-wow-delay=".75s">
                     <div class="blog-item-img">
                         <img src="assets/img/blog/lambasingi-tour.jpg" alt="Lambasingi Tour">
@@ -317,7 +327,7 @@ Tour Packages</li>
             </div>
 
 
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 filter-item cat-hill">
     <div class="blog-item wow fadeInUp" data-wow-delay=".75s">
         <div class="blog-item-img">
             <img src="assets/img/blog/vanajangi-tour.jpg" alt="Vanajangi Tour">
@@ -341,7 +351,7 @@ Tour Packages</li>
     </div>
 </div>
 
-<div class="col-md-6 col-lg-4">
+<div class="col-md-6 col-lg-4 filter-item cat-sacred">
     <div class="blog-item wow fadeInUp" data-wow-delay=".75s">
         <div class="blog-item-img">
             <img src="assets/img/blog/temple-tour.jpg" alt="Vizag Temple Tour">
@@ -366,7 +376,7 @@ Tour Packages</li>
 </div>
 
 
-<div class="col-md-6 col-lg-4">
+<div class="col-md-6 col-lg-4 filter-item cat-custom">
     <div class="blog-item wow fadeInUp" data-wow-delay=".75s">
         <div class="blog-item-img">
             <img src="assets/img/blog/honeymoon-tour.jpg" alt="Honeymoon Custom Package">
@@ -388,6 +398,10 @@ Tour Packages</li>
         </div>
     </div>
 </div>
+
+
+
+        </div>
 
 
 
